@@ -55,20 +55,24 @@ h1{
     font-family: norse-custom,sans-serif;
     text-align: center;
 }
-
-.image-container{
-    position: relative;
-    width: 33vw;
-}
-
 .background-image{
     height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.image-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
     position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 10%;
+    width: 50%;
     height: auto;
 }
