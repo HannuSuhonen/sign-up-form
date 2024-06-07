@@ -56,7 +56,7 @@
 
 .logo-area h1{
     font-family: norse-custom,sans-serif;
-    font-size: 54px;
+    font-size: 3em;
     color: white;
 }
 .background-image{
@@ -69,7 +69,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: auto;
+    width: 33vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,8 +87,10 @@
 }
 
 .logo{
-    height: 100%;
+    max-width: 50%;
+    max-height: 100%;
     width: auto;
+    height: auto;
     padding: 20px;
 }
 
@@ -99,15 +101,14 @@
 }
 
 .form-title{
-    margin: 5% 0 0 620px;
-    padding: 0 10%;
+    margin: 2% 10vw 2% 40vw;
 }
 
-.form{
+/* .form{
     margin: 5% 0 0 620px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     font-family: sans-serif;
-}
+} */
