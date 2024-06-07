@@ -54,7 +54,7 @@
   }
   
 
-h1{
+.logo-area h1{
     font-family: norse-custom,sans-serif;
     font-size: 54px;
     color: white;
@@ -73,6 +73,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .logo-area{
@@ -82,12 +83,31 @@ h1{
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-evenly;
 }
 
 .logo{
     height: 100%;
     width: auto;
     padding: 20px;
+}
+
+.form-container h1,
+.form-container p{
+    color: black;
+    text-align: left;
+}
+
+.form-title{
+    margin: 5% 0 0 620px;
+    padding: 0 10%;
+}
+
+.form{
+    margin: 5% 0 0 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: sans-serif;
 }
