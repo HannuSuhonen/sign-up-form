@@ -14,8 +14,8 @@
   */
   * {
     margin: 0;
-    /* border: solid 1px;
-    border-color: red; */
+    /* outline: solid 1px;
+    outline-color: red; */
 
   }
   /*
@@ -26,6 +26,7 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background-color: #ebebeb;
   }
   /*
     5. Improve media defaults
@@ -94,30 +95,35 @@
 }
 
 .form-area{
-    margin-left: 32vw;
+    margin-left: 33vw;
     height: 33vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
-    background-color: lightgray;
 }
 
-.form-area,.form-container{
+.form-area{
     padding: 3% 5%;
 }
 
 .form-container{
+    background-color: white;
     margin-left: 33vw;
+    padding: 0 5%;
     -webkit-box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
     -moz-box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
     box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
 }
 
+.form-container h1{
+    margin-bottom: 25px;
+}
+
 .speaker-form{
     display: flex;
     flex-direction: column;
-    height: 20vh;
+    height: 25vh;
     gap: 5%;
 }
 
@@ -129,4 +135,34 @@
 .form-column{
     display: flex;
     flex-direction: column;
+}
+
+.form-row input{
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+    -webkit-box-shadow: 0 0 2px 2px rgba(122,122,122,0.4);
+    -moz-box-shadow: 0 0 2px 2px rgba(122,122,122,0.4);
+    box-shadow: 0 0 2px 2px rgba(122,122,122,0.4);
+}
+
+input:user-invalid{
+    border-color: red;
+}
+
+.submit-button{
+    background-color: #596D48;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
 }
