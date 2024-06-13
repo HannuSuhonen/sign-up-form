@@ -61,7 +61,7 @@ p{
 
 .logo-area h1{
     font-family: norse-custom,sans-serif;
-    font-size: 3em;
+    font-size: clamp(0.2rem, 1vw + 2rem, 5rem);
     color: white;
 }
 .background-image{
@@ -76,7 +76,7 @@ p{
     height: 100vh;
     width: 33vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -88,6 +88,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 10vh;
+    text-align: center;
 }
 
 .logo{
@@ -100,7 +102,7 @@ p{
 
 .form-area{
     margin-left: 33vw;
-    height: 33vh;
+    min-height: 33vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -108,28 +110,22 @@ p{
 }
 
 .form-area{
-    padding: 3% 5%;
+  padding: 5vh;
 }
 
 .form-container{
     background-color: white;
     margin-left: 33vw;
-    padding: 0 5%;
-    padding-top: 2%;
+    min-width: 600px;
     -webkit-box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
     -moz-box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
     box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
 }
 
-.form-container h1{
-    margin-bottom: 25px;
-}
-
 .speaker-form{
     display: flex;
     flex-direction: column;
-    height: 25vh;
-    gap: 5%;
+    padding: 5vh;
 }
 
 .form-row{
@@ -162,12 +158,16 @@ input:user-invalid{
     border-color: red;
 }
 
+.submit-area{
+  margin-left: 33vw;
+}
+
 .submit-button{
+    margin: 5vh;
     background-color: #596D48;
     border: none;
     padding: 10px 30px;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    margin-top: 50px;
 }
