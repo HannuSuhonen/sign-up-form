@@ -122,6 +122,10 @@ p{
     box-shadow: 0px 5px 10px 0px rgba(122,122,122,0.4);
 }
 
+.form-container h1{
+  margin-bottom: 20px;
+}
+
 .speaker-form{
     display: flex;
     flex-direction: column;
@@ -163,11 +167,11 @@ input:user-invalid{
 }
 
 .submit-button{
-    margin: 5vh;
-    background-color: #596D48;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
+  margin: 5vh;
+  background-color: #596D48;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
 }
