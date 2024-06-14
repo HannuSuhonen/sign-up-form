@@ -9,11 +9,16 @@
 </head>
 <body>
     <div class="image-container">
-        <img class="background-image" src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="background_image_grass">
+        <img class="background-image" src="./images/milky-way-559641_1280.jpg" alt="background_image_grass">
         <div class="logo-area">
             <img class="logo" src="./images/odin-lined.png" alt="logo_image_odin">
             <h1>Odin Signup form</h3>
         </div>
+        <div class="creator-license">
+            <p>Image by <a href="https://pixabay.com/users/promo25-630416/" target="_blank">promo25</a> from <a href="https://pixabay.com" target="_blank">Pixabay</a></p>
+            <p>Free for use under the Pixabay<a href="https://pixabay.com/service/license-summary/" target="_blank"> Content License</a></p>
+        </div>
+
     </div>
     <div class="form-area">
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started</p>
@@ -22,34 +27,35 @@
     <div class="form-container">
         <form id='myform' method='get' class='speaker-form'>
         <h1>Lets do this!</h1>
+        <p>Required fields are followed by *</p>
             <div class="form-row">
                 <div class='form-column'>
-                    <label for='first-name'>First Name</label>
+                    <label for='first-name'>First Name <span aria-label="required">*</span></label>
                     <input id='first-name' name='first-name' type='text' required/>
                     </div>
                 <div class='form-column'>
-                    <label for='last-name'>Last Name</label>
+                    <label for='last-name'>Last Name <span aria-label="required">*</span></label>
                     <input id='last-name' name='last-name' type='text' required/>
                 </div>
             </div>
             <div class="form-row">
                 <div class='form-column'>
-                    <label for='email'>Email</label>
+                    <label for='email'>Email <span aria-label="required">*</span></label>
                     <input id='email' name='email' type='email' required/>
                     </div>
                 <div class='form-column'>
-                    <label for='phone-number'>Phone Number</label>
+                    <label for='phone-number'>Phone Number <span aria-label="required">*</span></label>
                     <input id='phone-number' name='phone-number' type='text' required/>
                 </div>
             </div>
             <div class="form-row">
                 <div class='form-column'>
-                    <label for='password'>Password</label>
+                    <label for='password'>Password <span aria-label="required">*</span></label>
                     <input id='password' name='password' type='password'
                     required/>
                     </div>
                 <div class='form-column'>
-                    <label for='confirm-password'>Confirm Password</label>
+                    <label for='confirm-password'>Confirm Password <span aria-label="required">*</span></label>
                     <input id='confirm-password' name='confirm-password' type='password' required/>
                 </div>
             </div>
