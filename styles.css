@@ -201,3 +201,7 @@ input:user-invalid{
   font-weight: bold;
   cursor: pointer;
 }
+
+.submit-area p{
+  margin-left: 5vh;
+}
